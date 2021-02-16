@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1>Door and Package Monitoring System</h1>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	
+	<h2>About us</h2>
+	<p>We are a group of undergraduate students from university of Washington,ECE/CS department. This project is to build a front door monitor system which can secure your house and package at the front door. </p>
+	<h3>Meet the Group</h3>
+	<p>Anh H Lam, Francisco Luquin Monroy, Jared Ramirez, Johnny Zou, Mark Wu </p>
+	<img src="{{url_for('static', filename='fbiopenup.jpg')}}"/>
+	<a href="https://www.ece.uw.edu/"><button> Click Here To See UWECE</button></a>
+
+{% endblock content %}

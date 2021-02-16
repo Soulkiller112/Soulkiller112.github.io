@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Package Status</h1>	
+    {% for p in packages %}
+        <article class="media content-section">
+            <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="#">Package id: {{ p.package_id }}</a>
+                <small class="text-muted">delivered on： {{ p.date_delivered }}</small>
+            </div>
+            <h3><a class="article-title" href="#">{{ p.item_name }}</a></h3>
+            </div>
+        </article>
+    {% endfor %}
+{% endblock content %}

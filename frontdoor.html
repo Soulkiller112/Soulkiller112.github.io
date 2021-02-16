@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Frontdoor Status</h1>
+    <h2>Suspicious Approach</h2>	
+    {% for image in images %}
+        <a href="{{ url_for('static', filename='unknown/' + image) }}">{{ image }}</a>
+        </section>
+    {% endfor %}
+{% endblock content %}

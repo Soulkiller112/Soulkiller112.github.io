@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Upload a face image</h1>
+    <p>
+        Please use the name of the person as filename. For example: "Johnny.jpg"
+        The image has to be in ('png', 'jpg', 'jpeg'). 
+    </p>	
+    <form method=POST enctype=multipart/form-data action="{{ url_for('upload') }}">
+        <input type=file name=photo>
+        <input type=submit>
+    </form>
+
+    {% if result %}}
+        <p>{{result}} upload successfully! </p>
+    {% endif %}
+{% endblock content %}
